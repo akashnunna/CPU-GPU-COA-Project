@@ -1,4 +1,0 @@
-{
-  "fraction_identical_predictions_cpu_model_vs_gpu_model": 0.7066466766616691,
-  "note": "The two models were trained separately, so some disagreement is expected."
-}
