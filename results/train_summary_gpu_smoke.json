@@ -1,0 +1,59 @@
+{
+  "run": "gpu_smoke",
+  "device": "gpu",
+  "smoke_test": true,
+  "settings": {
+    "epochs": 2,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "optimizer": "Adam",
+    "loss": "CrossEntropyLoss (class-weighted)",
+    "image_size": 128,
+    "seed": 42,
+    "num_workers": 0,
+    "pin_memory": true,
+    "train_samples": 512,
+    "val_samples": 256,
+    "model_parameters": 390695
+  },
+  "class_weights": [
+    4.39223051071167,
+    2.789494514465332,
+    1.3022477626800537,
+    12.517857551574707,
+    1.285530924797058,
+    0.21325139701366425,
+    10.115440368652344
+  ],
+  "best_epoch": 2,
+  "best_val_macro_f1": 0.1374707249905149,
+  "best_val_loss": 1.8980696201324463,
+  "best_val_acc": 0.33984375,
+  "total_training_time_s": 3.7367936002556235,
+  "total_train_only_time_s": 3.3832206001970917,
+  "avg_epoch_time_s": 1.8683968001278117,
+  "avg_epoch_time_excl_first_s": 1.6848772000521421,
+  "warmup_time_s": 1.5536774001084268,
+  "total_experiment_time_s": 103.43361790012568,
+  "gpu_memory": {
+    "peak_allocated_mb": 367.6,
+    "peak_reserved_mb": 666.0
+  },
+  "environment": {
+    "python_version": "3.13.3",
+    "os": "Windows 11 (10.0.26200)",
+    "torch_version": "2.14.1+cu130",
+    "cpu_name": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cpu_logical_cores": 12,
+    "torch_cpu_threads": 8,
+    "cuda_available": true,
+    "cuda_version_in_torch": "13.0",
+    "cudnn_version": 92400,
+    "gpu_name": "NVIDIA GeForce RTX 2050",
+    "gpu_total_memory_mb": 4096,
+    "gpu_compute_capability": "8.6",
+    "system_ram_gb": "unavailable"
+  },
+  "notes": "Models start from identical initial weights (created on CPU with the same seed). Dropout uses a different random generator on CPU and GPU, and floating-point results differ slightly between devices, so the two training curves are similar but not identical."
+}

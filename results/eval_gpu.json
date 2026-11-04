@@ -1,0 +1,14 @@
+{
+  "run": "gpu",
+  "model_trained_on": "gpu",
+  "evaluated_on_device": "cpu",
+  "best_epoch": 13,
+  "test_samples": 2001,
+  "accuracy": 0.6636681659170415,
+  "macro_precision": 0.41771964960682506,
+  "macro_recall": 0.49869255230770043,
+  "macro_f1": 0.4403086452774389,
+  "weighted_precision": 0.7263674863512601,
+  "weighted_recall": 0.6636681659170415,
+  "weighted_f1": 0.6852071070261473
+}
