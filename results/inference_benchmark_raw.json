@@ -1,0 +1,246 @@
+{
+  "weights": "best_gpu.pt",
+  "images": 1000,
+  "repeats": 5,
+  "warmup_batches": 10,
+  "environment": {
+    "python_version": "3.13.3",
+    "os": "Windows 11 (10.0.26200)",
+    "torch_version": "2.14.1+cu130",
+    "cpu_name": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cpu_logical_cores": 12,
+    "torch_cpu_threads": 8,
+    "cuda_available": true,
+    "cuda_version_in_torch": "13.0",
+    "cudnn_version": 92400,
+    "gpu_name": "NVIDIA GeForce RTX 2050",
+    "gpu_total_memory_mb": 4096,
+    "gpu_compute_capability": "8.6",
+    "system_ram_gb": "unavailable"
+  },
+  "runs": [
+    {
+      "device": "cpu",
+      "mode": "compute_only",
+      "batch_size": 1,
+      "per_repeat": [
+        {
+          "repeat": 1,
+          "total_s": 3.9291717959567904,
+          "ms_per_image": 3.9291717959567904,
+          "images_per_s": 254.50656065204973
+        },
+        {
+          "repeat": 2,
+          "total_s": 3.869111202424392,
+          "ms_per_image": 3.869111202424392,
+          "images_per_s": 258.4572910112788
+        },
+        {
+          "repeat": 3,
+          "total_s": 3.8815961028449237,
+          "ms_per_image": 3.8815961028449237,
+          "images_per_s": 257.625980010407
+        },
+        {
+          "repeat": 4,
+          "total_s": 3.931623698445037,
+          "ms_per_image": 3.9316236984450366,
+          "images_per_s": 254.3478411719569
+        },
+        {
+          "repeat": 5,
+          "total_s": 3.8291084025986493,
+          "ms_per_image": 3.8291084025986493,
+          "images_per_s": 261.1574013734747
+        }
+      ]
+    },
+    {
+      "device": "cpu",
+      "mode": "compute_only",
+      "batch_size": 32,
+      "per_repeat": [
+        {
+          "repeat": 1,
+          "total_s": 4.016103099798784,
+          "ms_per_image": 4.016103099798784,
+          "images_per_s": 248.997591732668
+        },
+        {
+          "repeat": 2,
+          "total_s": 3.982802600832656,
+          "ms_per_image": 3.982802600832656,
+          "images_per_s": 251.0794785036389
+        },
+        {
+          "repeat": 3,
+          "total_s": 4.031094000907615,
+          "ms_per_image": 4.031094000907615,
+          "images_per_s": 248.0716152426231
+        },
+        {
+          "repeat": 4,
+          "total_s": 3.999969900585711,
+          "ms_per_image": 3.999969900585711,
+          "images_per_s": 250.00188122754903
+        },
+        {
+          "repeat": 5,
+          "total_s": 4.022116899956018,
+          "ms_per_image": 4.022116899956018,
+          "images_per_s": 248.62529480705425
+        }
+      ]
+    },
+    {
+      "device": "gpu",
+      "mode": "compute_only",
+      "batch_size": 1,
+      "per_repeat": [
+        {
+          "repeat": 1,
+          "total_s": 0.880973800085485,
+          "ms_per_image": 0.880973800085485,
+          "images_per_s": 1135.107536572558
+        },
+        {
+          "repeat": 2,
+          "total_s": 0.903998703463003,
+          "ms_per_image": 0.903998703463003,
+          "images_per_s": 1106.1962767969012
+        },
+        {
+          "repeat": 3,
+          "total_s": 0.865460992557928,
+          "ms_per_image": 0.865460992557928,
+          "images_per_s": 1155.4535774563715
+        },
+        {
+          "repeat": 4,
+          "total_s": 0.7730715980287641,
+          "ms_per_image": 0.7730715980287641,
+          "images_per_s": 1293.5412483783844
+        },
+        {
+          "repeat": 5,
+          "total_s": 0.7926321015693247,
+          "ms_per_image": 0.7926321015693247,
+          "images_per_s": 1261.6193540737368
+        }
+      ]
+    },
+    {
+      "device": "gpu",
+      "mode": "with_transfer",
+      "batch_size": 1,
+      "per_repeat": [
+        {
+          "repeat": 1,
+          "total_s": 0.9324382969643921,
+          "ms_per_image": 0.9324382969643921,
+          "images_per_s": 1072.4570228995947
+        },
+        {
+          "repeat": 2,
+          "total_s": 0.8939272987190634,
+          "ms_per_image": 0.8939272987190634,
+          "images_per_s": 1118.6592035313515
+        },
+        {
+          "repeat": 3,
+          "total_s": 0.880872001638636,
+          "ms_per_image": 0.880872001638636,
+          "images_per_s": 1135.2387158858007
+        },
+        {
+          "repeat": 4,
+          "total_s": 0.8936371023301035,
+          "ms_per_image": 0.8936371023301035,
+          "images_per_s": 1119.0224727605444
+        },
+        {
+          "repeat": 5,
+          "total_s": 0.880510596325621,
+          "ms_per_image": 0.880510596325621,
+          "images_per_s": 1135.7046742799114
+        }
+      ]
+    },
+    {
+      "device": "gpu",
+      "mode": "compute_only",
+      "batch_size": 32,
+      "per_repeat": [
+        {
+          "repeat": 1,
+          "total_s": 0.3571101005654782,
+          "ms_per_image": 0.3571101005654782,
+          "images_per_s": 2800.2568351231616
+        },
+        {
+          "repeat": 2,
+          "total_s": 0.35045269946567714,
+          "ms_per_image": 0.35045269946567714,
+          "images_per_s": 2853.452124993372
+        },
+        {
+          "repeat": 3,
+          "total_s": 0.3488493002951145,
+          "ms_per_image": 0.3488493002951145,
+          "images_per_s": 2866.5673090186347
+        },
+        {
+          "repeat": 4,
+          "total_s": 0.34758040052838624,
+          "ms_per_image": 0.34758040052838624,
+          "images_per_s": 2877.0321873149805
+        },
+        {
+          "repeat": 5,
+          "total_s": 0.34778410103172064,
+          "ms_per_image": 0.34778410103172064,
+          "images_per_s": 2875.347081805767
+        }
+      ]
+    },
+    {
+      "device": "gpu",
+      "mode": "with_transfer",
+      "batch_size": 32,
+      "per_repeat": [
+        {
+          "repeat": 1,
+          "total_s": 0.3817494995892048,
+          "ms_per_image": 0.3817494995892048,
+          "images_per_s": 2619.518823406673
+        },
+        {
+          "repeat": 2,
+          "total_s": 0.38419290049932897,
+          "ms_per_image": 0.38419290049932897,
+          "images_per_s": 2602.85913326435
+        },
+        {
+          "repeat": 3,
+          "total_s": 0.39007460069842637,
+          "ms_per_image": 0.39007460069842637,
+          "images_per_s": 2563.612186513825
+        },
+        {
+          "repeat": 4,
+          "total_s": 0.38067859993316233,
+          "ms_per_image": 0.38067859993316233,
+          "images_per_s": 2626.887879107402
+        },
+        {
+          "repeat": 5,
+          "total_s": 0.3859109999611974,
+          "ms_per_image": 0.3859109999611974,
+          "images_per_s": 2591.2710446205165
+        }
+      ]
+    }
+  ],
+  "gpu_benchmark_ran": true
+}
